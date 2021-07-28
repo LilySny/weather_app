@@ -1,27 +1,26 @@
+import 'main_info_model.dart';
+
 class WeatherModel {
   WeatherModel({
+    this.mainInfo,
     this.id,
-    this.main,
-    this.description,
-    this.icon,
+    this.name,
   });
 
   int id;
-  String main;
-  String description;
-  String icon;
+  MainInfoModel mainInfo;
+  String name;
 
-  factory WeatherModel.fromJson(Map<String, dynamic> json) => WeatherModel(
+  factory WeatherModel.fromJson(Map<String, dynamic> json) =>
+      WeatherModel(
+        mainInfo: MainInfoModel.fromJson(json["main"]),
         id: json["id"],
-        main: json["main"],
-        description: json["description"],
-        icon: json["icon"],
+        name: json["name"],
       );
 
   Map<String, dynamic> toJson() => {
+        "main": mainInfo.toJson(),
         "id": id,
-        "main": main,
-        "description": description,
-        "icon": icon,
+        "name": name,
       };
 }

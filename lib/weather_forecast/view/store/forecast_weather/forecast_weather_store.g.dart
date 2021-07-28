@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'current_weather_store.dart';
+part of 'forecast_weather_store.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,40 +8,40 @@ part of 'current_weather_store.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
-mixin _$CurrentWeatherStore on _CurrentWeatherStore, Store {
+mixin _$ForecastWeatherStore on _ForecastWeatherStore, Store {
   Computed<bool> _$loadingComputed;
 
   @override
   bool get loading => (_$loadingComputed ??= Computed<bool>(() => super.loading,
-          name: '_CurrentWeatherStore.loading'))
+          name: '_ForecastWeatherStore.loading'))
       .value;
 
-  final _$requestAtom = Atom(name: '_CurrentWeatherStore.request');
+  final _$requestAtom = Atom(name: '_ForecastWeatherStore.request');
 
   @override
-  ObservableFuture<WeatherElementModel> get request {
+  ObservableFuture<ForecastWeatherModel> get request {
     _$requestAtom.reportRead();
     return super.request;
   }
 
   @override
-  set request(ObservableFuture<WeatherElementModel> value) {
+  set request(ObservableFuture<ForecastWeatherModel> value) {
     _$requestAtom.reportWrite(value, super.request, () {
       super.request = value;
     });
   }
 
-  final _$_CurrentWeatherStoreActionController =
-      ActionController(name: '_CurrentWeatherStore');
+  final _$_ForecastWeatherStoreActionController =
+      ActionController(name: '_ForecastWeatherStore');
 
   @override
-  void getCurrentWeather(String city) {
-    final _$actionInfo = _$_CurrentWeatherStoreActionController.startAction(
-        name: '_CurrentWeatherStore.getCurrentWeather');
+  void getForecastWeather(String city) {
+    final _$actionInfo = _$_ForecastWeatherStoreActionController.startAction(
+        name: '_ForecastWeatherStore.getForecastWeather');
     try {
-      return super.getCurrentWeather(city);
+      return super.getForecastWeather(city);
     } finally {
-      _$_CurrentWeatherStoreActionController.endAction(_$actionInfo);
+      _$_ForecastWeatherStoreActionController.endAction(_$actionInfo);
     }
   }
 

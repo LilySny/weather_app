@@ -1,8 +1,9 @@
 import 'package:dio/dio.dart';
-import 'package:weather_app/weather_forecast/data/model/weather_element_model.dart';
 import 'package:weather_app/weather_forecast/data/model/forecast_weather_model.dart';
 import 'package:weather_app/weather_forecast/data/service/weather_service.dart';
 import 'package:weather_app/weather_forecast/utils/utils.dart';
+
+import '../model/weather_model.dart';
 
 class WeatherServiceImpl implements WeatherService {
   final Dio _dio;
@@ -10,9 +11,9 @@ class WeatherServiceImpl implements WeatherService {
   WeatherServiceImpl(this._dio);
 
   @override
-  Future<WeatherElementModel> getCurrentWeather(String city) async {
+  Future<WeatherModel> getCurrentWeather(String city) async {
     final response = await _dio.get(weatherBaseUrl('weather', city, apiKey));
-    return WeatherElementModel.fromJson(response.data);
+    return WeatherModel.fromJson(response.data);
   }
 
   @override

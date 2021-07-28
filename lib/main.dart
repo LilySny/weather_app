@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/weather_forecast/view/weather_forecast_page.dart';
+import 'package:weather_app/home/view/home_page.dart';
+import 'package:weather_app/shared/core_utils.dart';
 
 void main() {
+  setupGetIt();
   runApp(MyApp());
 }
 
@@ -10,10 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Weather App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: WeatherForecastPage(),
+      theme: ThemeData.dark(),
+      home: HomePage(),
     );
   }
 }
