@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:weather_app/weather_forecast/view/widgets/search_widget.dart';
+import 'package:weather_app/home/view/widgets/search_widget.dart';
 import '../../shared/core_utils.dart';
 import '../../weather_forecast/view/weather_forecast_page.dart';
 import '../store/search_store.dart';

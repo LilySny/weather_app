@@ -69,7 +69,7 @@ class _WeatherForecastPageState extends State<WeatherForecastPage> {
                       FutureStatus.rejected) {
                     return Center(
                       child: Text(
-                        'An error occurred, try again later :c',
+                        'An error occurred, try again later',
                         style: TextStyle(
                           fontSize: 18.0,
                           color: Colors.red,
