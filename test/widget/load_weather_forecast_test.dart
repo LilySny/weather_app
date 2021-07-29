@@ -9,10 +9,10 @@ import '../mock_weather_service.dart';
 
 void main() {
   group("Weather forecast page", () {
+    setupGetIt();
+
     testWidgets('Test if widget shows loading and current weather data',
         (WidgetTester tester) async {
-      setupGetIt();
-
       await tester.pumpWidget(MaterialApp(
         home: WeatherForecastPage(
           city: 'Silverstone',
