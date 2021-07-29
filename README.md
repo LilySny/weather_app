@@ -1,16 +1,17 @@
+![Dart](https://img.shields.io/badge/-Dart-black?style=flat-square&logo=Dart)
+![Flutter](https://img.shields.io/badge/-Flutter-black?style=flat-square&logo=Flutter)
+![Android](https://img.shields.io/badge/-Android-black?style=flat-square&logo=Android)
+![IOS](https://img.shields.io/badge/-black?style=flat-square&logo=IOS)
+
+
 # weather_app
 
-A new Flutter project.
+A weather forecast app for a rock band. Here you can check out the current weather and the forecast for the next 5 days of the main cities where shows of the tour are taking place.
 
-## Getting Started
+## Details
 
-This project is a starting point for a Flutter application.
+- Android 
+- IOS
 
-A few resources to get you started if this is your first Flutter project:
+Used [OpenWeather](https://openweathermap.org/forecast5#5days) API.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
